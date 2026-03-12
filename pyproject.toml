@@ -1,0 +1,54 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "bank_churn"
+version = "0.0.1"
+description = "Bank churn project"
+authors = [
+  { name = "ica1010" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "black",
+    "flake8",
+    "ipython",
+    "isort",
+    "jupyterlab",
+    "loguru",
+    "matplotlib",
+    "mkdocs",
+    "notebook",
+    "numpy",
+    "pandas",
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "scikit-learn",
+    "tqdm",
+    "typer",
+]
+requires-python = "~=3.10.0"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+known_first_party = ["bank_churn"]
+force_sort_within_sections = true
+
+
