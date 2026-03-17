@@ -1,0 +1,6 @@
+metrics:
+  accuracy: 0.85
+  recall_churn: 0.8
+  auc: 0.9
+  f1_score: 0.82
+  precision_churn: 0.78
